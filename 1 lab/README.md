@@ -10,4 +10,4 @@ $$
 ```
 ```
 ## Решение
-[Код программы]()
+[Код программы](https://github.com/YuriHSE/Laboratory/blob/main/1%20lab/1.c)
