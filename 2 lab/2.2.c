@@ -21,7 +21,7 @@ int main(){
     }
     printf("Values:\nx = %-10Lf \ny = %-10Lf\n", x, y);
     //one conditional statement with a complex condition
-    if (x >= 0 && (y >= 0 && y <= 1 - 2*x || y < 0 && y >= -2*x - 1) || x < 0 && y < 0 && pow(x, 2) + pow(y, 2) <= 1){
+    if (x >= 0 && (y >= 0 && (y < 1 - 2*x || fabs(y - 1 + 2*x) < 0.000001) || (y < 0 && (y > 2*x - 1 || fabs(y - 2*x + 1) < 0.000001))) || (x < 0 && y <= 0 && (pow(x, 2) + pow(y, 2) < 1 || fabs(pow(x, 2) + pow(y, 2) - 1) < 0.000001))){
         printf("The point belongs");
     } else {
         printf("The point does not belong");
