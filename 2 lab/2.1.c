@@ -2,13 +2,24 @@
 #include <stdio.h>
 #include <math.h>
 int main(){
-    long double x, y; //defining variables
+    long double x, y;
+    char a;
     printf("Enter the value x and y: ");
-    while ( (scanf("%Lf", &x)) != 1 || scanf("%Lf", &y) != 1) { //verification of entered data
-        printf("Incorrect entered value, try again: ");
-        while (getchar() != '\n');      
+    while (1){ //the cycle will not be interrupted until incorrect data is entered
+        while(scanf("%Lf", &x) != 1 || scanf("%Lf", &y) != 1){ //checking the first characters of the input data
+            printf("Incorrect value, try again: ");
+            while(getchar() != '\n');
+        }
+        scanf("%c", &a);
+        if (a == '\n'){ //lazy input for remainder of last element
+            break;
+        } else {
+            printf("Incorrect value, try again: ");
+            while(getchar() != '\n');
+            //continue
+        }
     }
-    printf("Values:\nx = %-10Lf \ny = %-10Lf\n", x, y); 
+    printf("Values:\nx = %-10Lf \ny = %-10Lf\n", x, y);
     //nested conditional statements with simple conditions
     if (x>=0){
         if (y>=0){
