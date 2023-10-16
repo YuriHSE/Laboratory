@@ -23,19 +23,21 @@ int main(){
     //nested conditional statements with simple conditions
     if (x>=0){
         if (y>=0){
-            if (y <= 1 - 2*x){
+            if (y < -2*x + 1 || fabs(y + 2*x - 1) < 0.0000001){
                 printf("The point belongs");
             } else {
                 printf("The point does not belong");
             }
-        } else if ( y >= -2*x - 1){
+        } else if (y > -1 + 2*x || fabs(y + 1 - 2*x) < 0.0000001){
             printf("The point belongs");
         } else{
             printf("The point does not belongs");
         }
-    } else if (y < 0){
-        if (pow(x, 2) + pow(y, 2) <= 1){
+    } else if (y <= 0){
+        if (pow(x, 2) + pow(y, 2) < 1 || fabs(pow(x, 2) + pow(y, 2) - 1) < 0.00000001){
             printf("The point belongs");
+        } else {
+            printf("The point does not belong");
         }
     } else{
         printf("The point does not belong");
