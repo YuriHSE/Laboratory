@@ -1,7 +1,7 @@
 // first solution, number 28
 #include <stdio.h>
 #include <math.h>
-int p1(int k){
+int number_sequence(int k){ //calculating denominator and numerator
     int t = 1;
     while(k>0){
         t *= k;
@@ -9,13 +9,13 @@ int p1(int k){
     }
     return t;
 }
-float sum(int n, float x){
+float sum(int n, float x){ //expression counting
     float num, det;
     if (n == 0){
         return 1;
     } else {
-        num = pow(-1, n) * pow(x, n) * p1(2*n - 1);
-        det = p1(2*n);
+        num = pow(-1, n) * pow(x, n) * number_sequence(2*n - 1);
+        det = number_sequence(2*n);
     }
     return num / det + sum(n-1, x);
 }
