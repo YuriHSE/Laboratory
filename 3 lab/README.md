@@ -7,7 +7,7 @@
 
 
 ## Решение
-#### [Решение 1 (циклы)]()
-#### [Решение 2 (рекурсии)]()
+#### [Решение 1 (циклы)](https://github.com/YuriHSE/Laboratory/blob/main/3%20lab/3_cycles.c)
+#### [Решение 2 (рекурсии)](https://github.com/YuriHSE/Laboratory/blob/main/3%20lab/3_recursion.c)
 ## Тесты
 ### Тест 1
