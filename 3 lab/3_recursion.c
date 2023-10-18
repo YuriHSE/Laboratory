@@ -1,4 +1,3 @@
-// first solution, number 28
 #include <stdio.h>
 #include <math.h>
 int number_sequence(int k){ //calculating denominator and numerator
