@@ -5,7 +5,7 @@
 Третье решение должно быть оформлено в виде отдельной функции, вызываемой из основной программы. Функция не содержит условного оператора, а только логическое выражение.
 <img width="2000" src="https://github.com/YuriHSE/Laboratory/assets/145991450/f3f72334-7009-4196-bd5e-3e9697da6bbd">
 ## Решение
-#### [Решение](https://github.com/YuriHSE/Laboratory/blob/main/2%20lab/2.1%2B2%2B3.c)
+#### [Код программы](https://github.com/YuriHSE/Laboratory/blob/main/2%20lab/2.1%2B2%2B3.c)
 ## Тесты
 ### Тест 1 (1 четверть)
 ```
