@@ -3,16 +3,16 @@
 long double f_while(long double x, int n, int a){ //function for WHILE
     long double sum = 1;
     while (n){
-        long long int numerator = 1, denominator = 1;
+        long double test = 1;
         int k = n; //copy n
         //counting each term
         while (k>0){
-            numerator *= 2*k - 1;
-            denominator *= 2*k;
+            //numerator *= 2*k - 1;
+            //denominator *= 2*k;
+            test *= (long double)(2 * k - 1) / (2 * k);
             k--;
         }
-        long double slag = (long double)numerator / denominator; 
-        sum += pow(-1, n)*pow(x, n) * slag;
+        sum += pow(-1, n)*pow(x, n) * test;
         n--;
     }
     /*if (isnan(sum)){
@@ -28,13 +28,10 @@ long double f_while(long double x, int n, int a){ //function for WHILE
 long double f_for(long double x, int n, int a){ //function for FOR 
     long double sum = 1;
     for (int i = 1; i < n+1; ++i){
-        long long int slag1 = 1;
-        long long int slag2 = 1;
+        long double slag = 1;
         for (int j = 1; j <= i; ++j){
-            slag1 *= 2*j - 1;
-            slag2 *= 2*j;
+            slag *= (long double) (2 * j - 1) / (2 * j);
         }
-        long double slag = (long double)slag1 / slag2; 
         sum += pow(-1, i)*pow(x, i) * slag;     
     }
     printf("%.*Lf\n", a, sum);
@@ -58,6 +55,7 @@ long double sum(int n, long double x){ //expression counting
     }
     return num / det + sum(n-1, x);
 }
+
 int main(){ 
     long double x;
     int n, accuracy, p;
