@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
-float f1(float x, int n, int a){ //function for WHILE
-    float sum = 1;
+long double f_while(long double x, int n, int a){ //function for WHILE
+    long double sum = 1;
     while (n){
         long long int numerator = 1, denominator = 1;
         int k = n; //copy n
@@ -11,7 +11,7 @@ float f1(float x, int n, int a){ //function for WHILE
             denominator *= 2*k;
             k--;
         }
-        double slag = (double)numerator / denominator; 
+        long double slag = (double)numerator / denominator; 
         sum += pow(-1, n)*pow(x, n) * slag;
         n--;
     }
@@ -22,11 +22,11 @@ float f1(float x, int n, int a){ //function for WHILE
     } else {
         printf("Result: %.*Lf", a, sum);
     }*/
-    printf("Result: %.*f", a, sum);
+    printf("Result: %.*Lf", a, sum);
     return 0;
 }
-float f2(float x, int n, int a){ //function for FOR 
-    float sum = 1;
+long double f_for(long double x, int n, int a){ //function for FOR 
+    long double sum = 1;
     for (int i = 1; i < n+1; ++i){
         long long int slag1 = 1;
         long long int slag2 = 1;
@@ -34,10 +34,10 @@ float f2(float x, int n, int a){ //function for FOR
             slag1 *= 2*j - 1;
             slag2 *= 2*j;
         }
-        double slag = (long double)slag1 / slag2; 
+        long double slag = (long double)slag1 / slag2; 
         sum += pow(-1, i)*pow(x, i) * slag;     
     }
-    printf("Result: %.*f", a, sum);
+    printf("Result: %.*Lf", a, sum);
     return 0;
 }
 int main(){ 
@@ -62,7 +62,7 @@ int main(){
         while(getchar() != '\n');
         scanf("%d", &p);
     }
-    if (p == 1) f1(x, n, a);
-    if (p == 2) f2(x, n, a);
+    if (p == 1) f_while(x, n, a);
+    if (p == 2) f_for(x, n, a);
 }
 
