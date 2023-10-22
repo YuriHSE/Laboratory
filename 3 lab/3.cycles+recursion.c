@@ -89,5 +89,3 @@ int main(){
     if (p == 2) f_for(x, n, accuracy);
     printf("Result through recursion: %.*Lf", accuracy, sum(n, x));
 }
-// на 10! и не только при большом количестве знаков х расхождение на 10^-15
-// для всех кроме 0,5 расхождение на 10^-15
