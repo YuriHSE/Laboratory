@@ -7,8 +7,6 @@
 
 
 ## Решение
-#### [Решение 1 (циклы)](https://github.com/YuriHSE/Laboratory/blob/main/3%20lab/3_cycles.c)
-#### [Решение 2 (рекурсии)](https://github.com/YuriHSE/Laboratory/blob/main/3%20lab/3_recursion.c)
 #### [Полный код программы для сравнений получаемых значений](https://github.com/YuriHSE/Laboratory/blob/main/3%20lab/3.cycles%2Brecursion.c)
 ## Тесты
 ### Тест 1
