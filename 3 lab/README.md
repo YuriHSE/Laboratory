@@ -12,3 +12,12 @@
 #### [Полный код программы для сравнений получаемых значений](https://github.com/YuriHSE/Laboratory/blob/main/3%20lab/3.cycles%2Brecursion.c)
 ## Тесты
 ### Тест 1
+```
+Enter the value x, n and accuracy: 2131 2 3
+Incorrect value, try again: 0.5 7 5
+How to calculate a function: through a cycle WHILE or through a cycle FOR, write the number 1 or 2 accordingly
+Enter the value: 1
+Result through cycles: 0.81598
+Result through recursion: 0.81598                                                                                          
+```
+Данную задачу я решил тремя способами, два из которых это через разные циклы (по условию), а одно через рекурсию, чтобы сравнить получаемые значения и выявить наиболее эффективный способ. В первом тесте показан самый обычный случай
