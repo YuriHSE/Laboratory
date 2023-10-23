@@ -2,7 +2,7 @@
 #include <math.h>
 long double f_while(long double x, int n, int a){ //function for WHILE
     long double sum = 1;
-    while (n){
+    while (n > 0){
         long double test = 1;
         int k = n; //copy n
         //counting each term
@@ -12,7 +12,7 @@ long double f_while(long double x, int n, int a){ //function for WHILE
             test *= (long double)(2 * k - 1) / (2 * k);
             k--;
         }
-        sum += pow(-1, n)*pow(x, n) * test;
+        sum += pow(-1, n) * pow(x, n) * test;
         n--;
     }
     /*if (isnan(sum)){
@@ -37,23 +37,20 @@ long double f_for(long double x, int n, int a){ //function for FOR
     printf("%.*Lf\n", a, sum);
     return 0;
 }
-long long int number_sequence(int k){ //calculating denominator and numerator
-    long long int t = 1;
+long double number_sequence(int k, long double x){ //calculating denominator and numerator
+    long double t = pow(-1, k) * pow(x, k);
     while(k>0){
-        t *= k;
-        k -= 2;
+        t *= (long double) (2 * k - 1) / (2 * k);
+        k--;
     }
     return t;
 }
 long double sum(int n, long double x){ //expression counting
-    long double num, det;
     if (n == 0){
         return 1;
     } else {
-        num = pow(-1, n) * pow(x, n) * number_sequence(2*n - 1);
-        det = number_sequence(2*n);
+        return number_sequence(n, x) + sum(n-1, x);
     }
-    return num / det + sum(n-1, x);
 }
 
 int main(){ 
@@ -87,3 +84,6 @@ int main(){
     if (p == 2) f_for(x, n, accuracy);
     printf("Result through recursion: %.*Lf", accuracy, sum(n, x));
 }
+// на 10! и не только при большом количестве знаков х расхождение на 10^-15
+// для всех кроме 0,5 расхождение на 10^-15
+// через рекурсию увеличение больше
