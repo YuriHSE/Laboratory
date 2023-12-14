@@ -6,6 +6,7 @@
 #### [Полный код программы для сравнений получаемых значений](https://github.com/YuriHSE/Laboratory/blob/main/4%20lab/4.c)
 ## Тесты
 ### Тест 1
+'''
 Enter array: 1 2 3 4 5
 
 Array of Numbers:
@@ -13,3 +14,4 @@ Array of Numbers:
 Enter y: 3
 Answer to 1 task: 2.000000
 Answer to 2 task: 3.500000%                                                                                                             
+'''
