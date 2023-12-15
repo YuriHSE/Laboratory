@@ -9,7 +9,7 @@
 <img width="855" alt="Снимок экрана 2023-12-15 в 17 03 03" src="https://github.com/YuriHSE/Laboratory/assets/145991450/deb79163-2f85-4607-bcb2-4be73f5d39a9">
 
 ## Решение
-#### [Полный код программы]()
+#### [Полный код программы](https://github.com/YuriHSE/Laboratory/blob/main/5%20lab/5.c)
 ## Тесты
 ### Тест 1
 
