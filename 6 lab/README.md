@@ -4,7 +4,7 @@
 <img width="856" alt="Снимок экрана 2023-12-15 в 17 50 05" src="https://github.com/YuriHSE/Laboratory/assets/145991450/4e354b82-0494-4348-85d6-ef01d1928a34">
 
 ## Решение
-#### [Полный код программы]()
+#### [Полный код программы](https://github.com/YuriHSE/Laboratory/blob/main/6%20lab/6.c)
 ## Тесты
 ### Тест 1
 
