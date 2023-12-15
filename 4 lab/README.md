@@ -3,7 +3,7 @@
 Оба задания реализовать в одной программе.
 <img width="1049" src="https://github.com/YuriHSE/Laboratory/assets/145991450/dc133140-785f-46f9-aee0-051a5300fef8">
 ## Решение
-#### [Полный код программы для сравнений получаемых значений](https://github.com/YuriHSE/Laboratory/blob/main/4%20lab/4.c)
+#### [Полный код программы](https://github.com/YuriHSE/Laboratory/blob/main/4%20lab/4.c)
 ## Тесты
 ### Тест 1
 ```
