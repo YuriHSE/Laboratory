@@ -5,3 +5,4 @@
 #### [Лабораторная работа №4. ОБРАБОТКА ДАННЫХ В ОДНОМЕРНОМ МАССИВЕ](https://github.com/YuriHSE/Laboratory/tree/main/4%20lab)
 #### [Лабораторная работа №5. ОБРАБОТКА ДВУМЕРНЫХ МАССИВОВ](https://github.com/YuriHSE/Laboratory/tree/main/5%20lab)
 #### [Лабораторная работа №6. МОДИФИКАЦИЯ ОДНОМЕРНЫХ ДИНАМИЧЕСКИХ МАССИВОВ.](https://github.com/YuriHSE/Laboratory/tree/main/6%20lab)
+#### [Лабораторная работа №7. ОБРАБОТКА СТРОК.](https://github.com/YuriHSE/Laboratory/tree/main/7%20lab)
