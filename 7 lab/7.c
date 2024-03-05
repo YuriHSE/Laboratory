@@ -1,24 +1,45 @@
 #include <stdio.h>
 #include <string.h>
-
+#include <ctype.h>
 int main() {
-    char s[100];
-    fgets(s, sizeof(s), stdin);
-    s[strlen(s) - 1] = '\0';
-
-    char *token = strtok(s, " ");
-    char *words[100];
+    char input[100];
+    printf("Введите строку: ");
+    fgets(input, sizeof(input), stdin);
+    
+    // Заменяем точку на пробел для разделения слов
+    int input_length = strlen(input);
+    for (int i = 0; i < input_length; i++) {
+        if (input[i] == '.') {
+            input[i] = ' ';
+        }
+    }
+    
+    char *words[30]; // Объявляем массив указателей на строки
     int count = 0;
+
+    char *token = strtok(input, " "); // Находим первое слово в строке
     while (token != NULL) {
-        words[count] = token;
-        count++;
-        token = strtok(NULL, " ");
+        // Проверяем, содержит ли слово только буквы и цифры
+        int valid = 1;
+        int token_length = strlen(token);
+        for (int j = 0; j < token_length; j++) {
+            if (isspace(token[j])) {
+                valid = 0;
+                break;
+            }
+        }
+        if (valid) {
+            words[count] = token; // Сохраняем слово в массив
+            count++;
+        }
+        
+        token = strtok(NULL, " "); // Находим следующее слово в строке
     }
 
-    words[count - 1][strlen(words[count - 1]) - 1] = '\0';
-    printf("Введённые данные: ");
+    // Выводим слова из массива
+    printf("Введённые слова: ");
     for (int i = 0; i < count; i++) {
-      printf("%s ", words[i]);
+        printf("%s ", words[i]);
     }
     printf("\nAnswer: ");
     for (int i = 0; i < count; i++) {
