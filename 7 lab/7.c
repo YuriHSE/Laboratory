@@ -16,7 +16,11 @@ int main() {
     }
 
     words[count - 1][strlen(words[count - 1]) - 1] = '\0';
-
+    printf("Введённые данные: ");
+    for (int i = 0; i < count; i++) {
+      printf("%s ", words[i]);
+    }
+    printf("\nAnswer: ");
     for (int i = 0; i < count; i++) {
         if (strcmp(words[i], words[count - 1]) != 0) {            
           int flag = 1;
@@ -27,9 +31,9 @@ int main() {
             }
           }
           if (flag) {
-            printf("(%s)\n", words[i]);
+            printf("(%s) ", words[i]);
           } else {
-            printf("%s\n", words[i]);
+            printf("%s ", words[i]);
           }
         }
     }
