@@ -6,3 +6,6 @@
 #### [Лабораторная работа №5. ОБРАБОТКА ДВУМЕРНЫХ МАССИВОВ](https://github.com/YuriHSE/Laboratory/tree/main/5%20lab)
 #### [Лабораторная работа №6. МОДИФИКАЦИЯ ОДНОМЕРНЫХ ДИНАМИЧЕСКИХ МАССИВОВ.](https://github.com/YuriHSE/Laboratory/tree/main/6%20lab)
 #### [Лабораторная работа №7. ОБРАБОТКА СТРОК.](https://github.com/YuriHSE/Laboratory/tree/main/7%20lab)
+#### [Лабораторная работа №8. РАБОТА С БИНАРНЫМ ФАЙЛОМ.](https://github.com/YuriHSE/Laboratory/tree/main/8%20lab)
+#### [Лабораторная работа №9. СОРТИРОВКИ.](https://github.com/YuriHSE/Laboratory/tree/main/9%20lab)
+#### [Лабораторная работа №10. УКАЗАТЕЛИ. ДИНАМИЧЕСКИЕ СТРУКТУРЫ ДАННЫХ. ОБРАБОТКА СПИСКОВ.](https://github.com/YuriHSE/Laboratory/tree/main/10%20lab)
